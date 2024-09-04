@@ -14,23 +14,55 @@
     <section>
       <p>If you have questions, please feel free to ask.</p>
       <form action="" method="post">
-        <div>
-          <label for="fname">First Name:</label>
-          <input id="fname" name="fname" type="text" required />
-        </div>
-        <div>
-          <label for="lname">Last Name:</label>
-          <input id="lname" name="lname" type="text" required />
-        </div>
-        <div>
-          <label for="user-email">Email:</label>
-          <input id="user-email" name="email" type="email" />
-        </div>
-        <div>
-          <label for="message">Your Message:</label><br />
-          <textarea id="message" rows="10" cols="50"></textarea>
-        </div>
-        <button type="submit">Send Message</button>
+        <table>
+          <tr>
+            <td>
+              <div>
+                <label for="fname">First Name:</label>
+                <input id="fname" name="fname" type="text" required />
+              </div>
+              <br />
+            </td>
+            <td>
+              <div>
+                <label for="lname">Last Name:</label>
+                <input id="lname" name="lname" type="text" required />
+              </div>
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <label for="user-email">Email:</label>
+                <input id="user-email" name="email" type="email" required />
+              </div>
+              <br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <label for="message">Your Message:</label><br />
+                <br />
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="10"
+                  cols="50"
+                  required
+                ></textarea>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <input type="submit" value="Send my message" />
+              <input type="reset" value="Clear all inputs" />
+            </td>
+          </tr>
+        </table>
       </form>
     </section>
     <footer>
